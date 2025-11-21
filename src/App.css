@@ -1,0 +1,194 @@
+#root {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 4rem 0;
+}
+
+.review-section {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.review-section h1 {
+    color: #212529;
+}
+
+.review-section .lead {
+    color: #6c757d;
+}
+
+.review-section .card {
+    min-height: 140px;
+}
+
+.review-section .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #adb5bd;
+    opacity: 0.9;
+}
+
+.review-section .carousel-indicators .active {
+    background-color: #0d6efd;
+}
+
+.card-service {
+    min-height: 220px;
+    border: 1px solid #dee2e6;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-service:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+footer {
+    font-size: 0.95rem;
+    width: 100%;
+}
+
+footer .footer-section h5 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.whatsapp-float:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+}
+
+.whatsapp-float:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
+}
+
+.scroll-float {
+    position: fixed;
+    width: 56px;
+    height: 56px;
+    bottom: 100px;
+    right: 24px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.scroll-float:hover {
+    transform: scale(1.1);
+}
+
+.scroll-float:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
+}
+
+.container-contact {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-height: 300px;
+}
+
+.map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 300px;
+}
+
+.info {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero img {
+        margin-top: 1rem;
+    }
+}
