@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function SiteNavbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light">
+    <nav className="navbar navbar-expand-lg bg-tertiary navbar-light">
       <div className="container-fluid">
         <Link className="navbar-brand fw-semibold" to="/">
           PT. Karbit Indonesia
@@ -30,7 +30,7 @@ export default function SiteNavbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/products">
+              <Link className="nav-link" to="/product">
                 Produk & Jasa
               </Link>
             </li>

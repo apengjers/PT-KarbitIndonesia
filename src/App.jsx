@@ -4,18 +4,21 @@ import {Routes, Route} from "react-router-dom";
 import SiteNavbar from "./assets/components/Navbar";
 import SiteFooter from "./assets/components/Footer";
 import Home from "./assets/pages/Home";
+import Product from './assets/pages/Product';
+import ProductDetail from './assets/components/ProductDetail';
+
+
 
 export default function App() {
   return (
     <>
       <SiteNavbar />
-      <main className="py-5">
+      <main>
         <div className='container'>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/contact" element={<h1>Halaman Kontak</h1>}/>
-            <Route path="/products" element={<h1>Halaman Produk</h1>}/>
-            <Route path="/product/:id" element={<h1>Halaman Detail Produk</h1>}/>
+            <Route path="/product" element={<Product/>}/>
+            <Route path="/product/:id" element={<ProductDetail/>}/>
           </Routes>
         </div>
       </main>

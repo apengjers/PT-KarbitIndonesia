@@ -1,5 +1,8 @@
 import {Link, useLocation} from "react-router-dom";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCubes, faS, faThumbsUp, faShield  } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function Home() {
     const {hash} = useLocation();
@@ -166,7 +169,7 @@ export default function Home() {
                         <div className="col-md-4">
                             <div className="card h-100">
                                 <div className="card-body text-center">
-                                    <i className="fa fa-shield fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                    <FontAwesomeIcon icon={faShield} className="mb-3 text-primary fa-7x" />
                                     <h5 className="card-title">Keamanan Terjamin</h5>
                                     <p className="card-text text-muted">Kami prioritaskan keselamatan dalam setiap layanan rakit dan angkut crane.</p>
                                 </div>
@@ -176,7 +179,7 @@ export default function Home() {
                         <div className="col-md-4">
                             <div className="card h-100">
                                 <div className="card-body text-center">
-                                    <i className="fa fa-cubes fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                    <FontAwesomeIcon icon={faCubes} className="mb-3 text-primary fa-7x"/>
                                     <h5 className="card-title">Produk Berkualitas</h5>
                                     <p className="card-text text-muted">Kami selalu memastikan produk kami berkualitas dan sesuai standar industri.</p>
                                 </div>
@@ -186,7 +189,7 @@ export default function Home() {
                         <div className="col-md-4">
                             <div className="card h-100">
                                 <div className="card-body text-center">
-                                    <i className="fa fa-thumbs-up fa-3x mb-3 text-primary" aria-hidden="true"></i>
+                                    <FontAwesomeIcon icon={faThumbsUp} className="mb-3 text-primary fa-7x"/>
                                     <h5 className="card-title">Layanan Profesional</h5>
                                     <p className="card-text text-muted">Tim kami terdiri dari teknisi berpengalaman yang siap membantu kebutuhan Anda.</p>
                                 </div>
