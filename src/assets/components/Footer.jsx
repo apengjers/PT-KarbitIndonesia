@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 export default function SiteFooter() {
     return (
         <footer className="bg-body">
-            <div className="container-fluid py-5">
+            <div className="container-fluid">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-5">
@@ -56,8 +56,8 @@ export default function SiteFooter() {
                         </div>
                     </div>
 
-                    <div className="d-flex justify-content-between pt-4 mt-4 border-top">
-                        <p className="mb-0 text-muted">© PT Karbit Indonesia 2025</p>
+                    <div className="d-flex justify-content-between pt-4 mt-5 border-top">
+                        <p className="text-muted">© PT Karbit Indonesia 2025</p>
                         <small className="text-muted">Bukankah ini My</small>
                     </div>
                 </div>
