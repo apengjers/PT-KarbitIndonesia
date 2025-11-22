@@ -18,7 +18,7 @@ export default function Contact() {
       return;
     }
 
-    const text = `Halo Karbit Indonesia, saya ${name}${company ? " dari " + company : ""}. Pesan: ${message} (hp: ${phone})`;
+    const text = `Halo Karbit Indonesia,\nNama: ${name}\nPerusahaan: ${company}\nNomor HP: ${phone}\nPesan: ${message}`;
     const url = `https://api.whatsapp.com/send?phone=6282113780480&text=${encodeURIComponent(text)}`;
 
     // buka WA di tab baru
@@ -26,8 +26,8 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h2 className="text-center mb-4">Map PT Karbit Indonesia</h2>
+    <div className="py-5" id="contact">
+      <h2 className="text-center mt-4">Map PT Karbit Indonesia</h2>
 
       <div className="row g-4 justify-content-center">
         <div className="col-12 col-lg-7">

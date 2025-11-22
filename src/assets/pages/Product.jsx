@@ -2,9 +2,9 @@ import {Link} from "react-router-dom";
 
 export default function Product() {
     return (
-        <section id="services" className="py-3">
+        <section className="py-5" id="product">
             <div className="container">
-                <h2 className="h3 mb-4">Produk &amp; Jasa Kami</h2>
+                <h2 className="h3 mb-4 pt-5">Produk &amp; Jasa Kami</h2>
                 <div className="row g-4">
                     <div className="col-md-4">
                         <div className="card card-service h-100">

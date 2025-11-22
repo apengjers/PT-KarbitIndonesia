@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function SiteFooter() {
     return (
-        <footer className="bg-body">
+        <footer className="pt-5">
             <div className="container-fluid">
                 <div className="container">
                     <div className="row">
