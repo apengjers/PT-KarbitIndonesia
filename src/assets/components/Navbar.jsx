@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function SiteNavbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-tertiary navbar-light">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-tertiary navbar-light" id="navbar">
+      <div className="container">
         <Link className="navbar-brand fw-semibold" to="/">
           PT. Karbit Indonesia
         </Link>

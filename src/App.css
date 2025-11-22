@@ -1,5 +1,6 @@
 #root {
-    max-width: 1920px;
+    min-width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -113,13 +114,13 @@ footer .nav-link:hover {
 }
 
 .whatsapp-float:hover {
+    color: #fff;
     background-color: #1ebe5d;
     transform: scale(1.1);
 }
 
 .whatsapp-float:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
 }
 
 .scroll-float {
@@ -128,7 +129,8 @@ footer .nav-link:hover {
     height: 56px;
     bottom: 100px;
     right: 24px;
-    color: #fff;
+    background-color: #0d6efd;
+    color: rgb(255, 255, 255);
     border-radius: 50%;
     text-align: center;
     font-size: 24px;
@@ -143,11 +145,11 @@ footer .nav-link:hover {
 
 .scroll-float:hover {
     transform: scale(1.1);
+    color: white;
 }
 
 .scroll-float:focus {
     outline: none;
-    box-shadow: 0 0 0 4px rgba(37, 211, 102, 0.18);
 }
 
 .container-contact {
