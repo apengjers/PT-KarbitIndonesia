@@ -37,14 +37,12 @@ export default function ProductDetail() {
           </div>
         </div>
 
-        {/* Kanan: deskripsi */}
         <div className="col-12 col-md-7">
           <div className="card h-100 border-0">
             <div className="card-body">
               <h3 className="mb-3">Deskripsi Produk</h3>
               <p className="mb-4">{product.description}</p>
 
-              {/* Contoh tombol action */}
               <div className="d-flex gap-2">
                 <button className="btn btn-primary">Hubungi Penjual</button>
                 <Link to="/product" className="btn btn-outline-secondary">Kembali ke Produk</Link>

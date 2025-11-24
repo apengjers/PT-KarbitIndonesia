@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Product() {
     return (
@@ -11,7 +12,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">Excavator</h5>
                                 <img
-                                    src="/excavator.png"
+                                    src="src/assets/img/excavator.png"
                                     className="img-fluid mb-3"
                                     alt="Excavator"/>
                                 <p className="card-text text-muted flex-grow-1">
@@ -28,7 +29,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Dozer</h5>
                                 <img
-                                    src="/dozer.jpg"
+                                    src="src/assets/img/dozer.jpg"
                                     className="img-fluid mb-5"
                                     alt="Dozer"/>
                                 <p className="card-text text-muted flex-grow-1 mt-4">
@@ -45,7 +46,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Motor Grader</h5>
                                 <img
-                                    src="/grader.jpg"
+                                    src="src/assets/img/grader.jpg"
                                     className="img-fluid mb-3"
                                     alt="Motor Grader"
                                     />
@@ -53,7 +54,7 @@ export default function Product() {
                                     Motor Grader yang kami sewakan memiliki performa optimal untuk berbagai
                                     kebutuhan konstruksi.
                                 </p>
-                                <Link to="/product/3" className="btn btn-outline-primary mt-3">Detail</Link>
+                                <HashLink to="/product/3" className="btn btn-outline-primary mt-3">Detail</HashLink>
                             </div>
                         </div>
                     </div>

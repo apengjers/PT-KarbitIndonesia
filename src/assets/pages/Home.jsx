@@ -215,7 +215,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="public/rezeKontraktor.png"
+                                                        src="src/assets/img/reze1.png"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan A"/>
                                                     <div>
@@ -233,7 +233,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="public/reze2.jpg"
+                                                        src="src/assets/img/reze2.jpg"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan B"/>
                                                     <div>
@@ -251,7 +251,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="public/reze3.jpg"
+                                                        src="src/assets/img/reze3.jpg"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan C"/>
                                                     <div>
