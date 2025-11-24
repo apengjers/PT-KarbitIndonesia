@@ -26,25 +26,25 @@ export default function SiteNavbar() {
                     <ul className="navbar-nav ms-auto align-items-lg-center">
 
                         <li className="nav-item nav-link">
-                            <a className="nav-link" href="#hero">
+                            <a className="nav-link" href="/#hero">
                                 Home
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#product">
+                            <a className="nav-link" href="/#product">
                                 Produk & Jasa
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#review">
+                            <a className="nav-link" href="/#review">
                                 Review
                             </a>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="#contact">
+                            <a className="nav-link" href="/#contact">
                                 Contact
                             </a>
                         </li>
