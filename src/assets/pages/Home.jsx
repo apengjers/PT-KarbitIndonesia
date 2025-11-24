@@ -215,7 +215,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="https://th.wallhaven.cc/small/k7/k7jklm.jpg"
+                                                        src="public/rezeKontraktor.png"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan A"/>
                                                     <div>
@@ -233,7 +233,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="https://th.wallhaven.cc/small/k7/k7jklm.jpg"
+                                                        src="public/reze2.jpg"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan B"/>
                                                     <div>
@@ -251,7 +251,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="https://th.wallhaven.cc/small/ox/oxod39.jpg"
+                                                        src="public/reze3.jpg"
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan C"/>
                                                     <div>

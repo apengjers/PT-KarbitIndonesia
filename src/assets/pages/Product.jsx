@@ -11,7 +11,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">Excavator</h5>
                                 <img
-                                    src="https://alatberat.bdmi.co.id/wp-content/uploads/2024/01/LG9060_1.png"
+                                    src="public/excavator.png"
                                     className="img-fluid mb-3"
                                     alt="Excavator"/>
                                 <p className="card-text text-muted flex-grow-1">
@@ -28,7 +28,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Dozer</h5>
                                 <img
-                                    src="https://encrypted-tbn0.gstatic.com/imgs?q=tbn:ANd9GcQGbUemAPE_rCYA_6Sngm3tyHGRFb6siaY0Yg&s"
+                                    src="public/dozer.jpg"
                                     className="img-fluid mb-5"
                                     alt="Dozer"/>
                                 <p className="card-text text-muted flex-grow-1 mt-4">
@@ -43,12 +43,13 @@ export default function Product() {
                     <div className="col-md-4">
                         <div className="card card-service h-100">
                             <div className="card-body d-flex flex-column">
-                                <h5 className="card-title">Motor Grader</h5>
+                                <h5 className="card-title mb-5">Motor Grader</h5>
                                 <img
-                                    src="https://products.unitedtractors.com/wp-content/uploads/2021/03/Motor-Grader.png"
+                                    src="public/grader.jpg"
                                     className="img-fluid mb-3"
-                                    alt="Motor Grader"/>
-                                <p className="card-text text-muted flex-grow-1">
+                                    alt="Motor Grader"
+                                    />
+                                <p className="card-text text-muted flex-grow-1 mt-5">
                                     Motor Grader yang kami sewakan memiliki performa optimal untuk berbagai
                                     kebutuhan konstruksi.
                                 </p>
