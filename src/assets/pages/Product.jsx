@@ -11,7 +11,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">Excavator</h5>
                                 <img
-                                    src="public/excavator.png"
+                                    src="/excavator.png"
                                     className="img-fluid mb-3"
                                     alt="Excavator"/>
                                 <p className="card-text text-muted flex-grow-1">
@@ -28,7 +28,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Dozer</h5>
                                 <img
-                                    src="public/dozer.jpg"
+                                    src="/dozer.jpg"
                                     className="img-fluid mb-5"
                                     alt="Dozer"/>
                                 <p className="card-text text-muted flex-grow-1 mt-4">
@@ -45,7 +45,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Motor Grader</h5>
                                 <img
-                                    src="public/grader.jpg"
+                                    src="/grader.jpg"
                                     className="img-fluid mb-3"
                                     alt="Motor Grader"
                                     />
