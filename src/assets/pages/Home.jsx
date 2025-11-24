@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCubes, faS, faThumbsUp, faShield  } from "@fortawesome/free-solid-svg-icons";
 import Contact from "./Contact";
 import Product from "./Product";
+import Reze1 from "/src/assets/img/reze1.png";
+import Reze2 from "/src/assets/img/reze2.jpg";
+import Reze3 from "/src/assets/img/reze3.jpg";
 
 
 
@@ -215,7 +218,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="src/assets/img/reze1.png"
+                                                        src= {Reze1}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan A"/>
                                                     <div>
@@ -233,7 +236,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="src/assets/img/reze2.jpg"
+                                                        src= {Reze2}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan B"/>
                                                     <div>
@@ -251,7 +254,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src="src/assets/img/reze3.jpg"
+                                                        src= {Reze3}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan C"/>
                                                     <div>

@@ -1,5 +1,8 @@
 import {Link} from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import Excavator from "/src/assets/img/excavator.png";
+import Dozer from "/src/assets/img/dozer.jpg";
+import Grader from "/src/assets/img/grader.jpg";
 
 export default function Product() {
     return (
@@ -12,7 +15,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">Excavator</h5>
                                 <img
-                                    src="src/assets/img/excavator.png"
+                                    src= {Excavator}
                                     className="img-fluid mb-3"
                                     alt="Excavator"/>
                                 <p className="card-text text-muted flex-grow-1">
@@ -29,7 +32,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Dozer</h5>
                                 <img
-                                    src="src/assets/img/dozer.jpg"
+                                    src= {Dozer}
                                     className="img-fluid mb-5"
                                     alt="Dozer"/>
                                 <p className="card-text text-muted flex-grow-1 mt-4">
@@ -46,7 +49,7 @@ export default function Product() {
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Motor Grader</h5>
                                 <img
-                                    src="src/assets/img/grader.jpg"
+                                    src= {Grader}
                                     className="img-fluid mb-3"
                                     alt="Motor Grader"
                                     />
