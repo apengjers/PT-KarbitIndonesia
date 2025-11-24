@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-
+import { HashLink } from "react-router-hash-link";
 export default function SiteNavbar() {
     return (
         <nav
@@ -25,28 +25,28 @@ export default function SiteNavbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav ms-auto align-items-lg-center">
 
-                        <li className="nav-item nav-link">
-                            <a className="nav-link" href="/#hero">
+                        <li className="nav-item">
+                            <HashLink className="nav-link" smooth to="/#hero">
                                 Home
-                            </a>
+                            </HashLink>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/#product">
+                            <HashLink className="nav-link" smooth to="/#product">
                                 Produk & Jasa
-                            </a>
+                            </HashLink>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/#review">
+                            <HashLink className="nav-link" smooth to="/#review">
                                 Review
-                            </a>
+                            </HashLink>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" href="/#contact">
+                            <HashLink className="nav-link" smooth to="/#contact">
                                 Contact
-                            </a>
+                            </HashLink>
                         </li>
 
                     </ul>
