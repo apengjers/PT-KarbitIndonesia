@@ -3,19 +3,21 @@ import {createPortal} from "react-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
-function Scroll() {
-    const scrollToTop = (e) => {
-        e.preventDefault();
-        window.scrollTo({top: 0, behavior: "smooth"});
-    };
+export const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: "smooth"});
+};
 
+function Scroll() {
     return (
         <a
             href="#"
-            onClick={scrollToTop}
+            onClick={(e) => {
+                e.preventDefault();
+                scrollToTop();
+            }}
             className="scroll-float"
             rel="noopener noreferrer"
-            aria-label="Scrool ke atas">
+            aria-label="Scroll ke atas">
             <FontAwesomeIcon icon={faArrowUp}/>
         </a>
     );

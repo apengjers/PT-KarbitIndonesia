@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
+import {HashLink} from "react-router-hash-link";
 import Excavator from "/src/assets/img/excavator.png";
 import Dozer from "/src/assets/img/dozer.jpg";
 import Grader from "/src/assets/img/grader.jpg";
@@ -14,10 +14,7 @@ export default function Product() {
                         <div className="card card-service h-100">
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title">Excavator</h5>
-                                <img
-                                    src= {Excavator}
-                                    className="img-fluid mb-3"
-                                    alt="Excavator"/>
+                                <img src={Excavator} className="img-fluid mb-3" alt="Excavator"/>
                                 <p className="card-text text-muted flex-grow-1">
                                     Excavator yang digunakan oleh perusahaan kami adalah Excavator dengan kualitas
                                     tinggi
@@ -31,10 +28,7 @@ export default function Product() {
                         <div className="card card-service h-100">
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Dozer</h5>
-                                <img
-                                    src= {Dozer}
-                                    className="img-fluid mb-5"
-                                    alt="Dozer"/>
+                                <img src={Dozer} className="img-fluid mb-5" alt="Dozer"/>
                                 <p className="card-text text-muted flex-grow-1 mt-4">
                                     Dozer yang kami sewakan memiliki performa optimal untuk berbagai kebutuhan
                                     konstruksi.
@@ -48,11 +42,7 @@ export default function Product() {
                         <div className="card card-service h-100">
                             <div className="card-body d-flex flex-column">
                                 <h5 className="card-title mb-5">Motor Grader</h5>
-                                <img
-                                    src= {Grader}
-                                    className="img-fluid mb-3"
-                                    alt="Motor Grader"
-                                    />
+                                <img src={Grader} className="img-fluid mb-3" alt="Motor Grader"/>
                                 <p className="card-text text-muted flex-grow-1 mt-5">
                                     Motor Grader yang kami sewakan memiliki performa optimal untuk berbagai
                                     kebutuhan konstruksi.

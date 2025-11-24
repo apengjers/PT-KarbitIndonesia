@@ -31,13 +31,13 @@ export default function SiteFooter() {
                                     <h5>Layanan</h5>
                                     <ul className="nav flex-column">
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Rakit Crane</a>
+                                            <a href="#" className="nav-link p-0 text-muted">Excavator</a>
                                         </li>
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Angkut Semen</a>
+                                            <a href="#" className="nav-link p-0 text-muted">Dozer</a>
                                         </li>
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Sewa Crane</a>
+                                            <a href="#" className="nav-link p-0 text-muted">Motor Grader</a>
                                         </li>
                                     </ul>
                                 </div>

@@ -1,14 +1,13 @@
-import {Link, useLocation} from "react-router-dom";
-import { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCubes, faS, faThumbsUp, faShield  } from "@fortawesome/free-solid-svg-icons";
+import {useLocation} from "react-router-dom";
+import {useEffect} from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCubes, faS, faThumbsUp, faShield} from "@fortawesome/free-solid-svg-icons";
 import Contact from "./Contact";
 import Product from "./Product";
 import Reze1 from "/src/assets/img/reze1.png";
 import Reze2 from "/src/assets/img/reze2.jpg";
 import Reze3 from "/src/assets/img/reze3.jpg";
-
-
+import {HashLink} from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
 
 export default function Home() {
     const {hash} = useLocation();
@@ -42,9 +41,9 @@ export default function Home() {
                             </p>
 
                             <p>
-                                <Link to="/product" className="btn btn-primary me-2">
+                                <HashLink to="/#product" className="btn btn-primary me-2">
                                     Lihat Layanan
-                                </Link>
+                                </HashLink>
                             </p>
                         </div>
                     </div>
@@ -143,7 +142,7 @@ export default function Home() {
                         <div className="col-md-4">
                             <div className="card h-100">
                                 <div className="card-body text-center">
-                                    <FontAwesomeIcon icon={faShield} className="mb-3 text-primary fa-7x" />
+                                    <FontAwesomeIcon icon={faShield} className="mb-3 text-primary fa-7x"/>
                                     <h5 className="card-title">Keamanan Terjamin</h5>
                                     <p className="card-text text-muted">Kami prioritaskan keselamatan dalam setiap layanan rakit dan angkut crane.</p>
                                 </div>
@@ -173,16 +172,15 @@ export default function Home() {
                 </div>
             </section>
 
-            < Product/>
-            
-            {/* REVIEW / TESTIMONIAL */}
+            < Product/> {/* REVIEW / TESTIMONIAL */}
             <section className="review-section py-5" id="review">
                 <div className="container pt-4">
                     <div className="row align-items-center">
                         <div className="col-lg-5 mb-4 mb-lg-0">
                             <h2 className="display-6 fw-bold">Kata Mereka</h2>
                             <p className="lead text-muted">
-                                Kami sangat berterima kasih kepada para pelanggan kami yang telah memberikan kritik dan saran.
+                                Kami sangat berterima kasih kepada para pelanggan kami yang telah memberikan
+                                kritik dan saran.
                             </p>
                         </div>
 
@@ -218,7 +216,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src= {Reze1}
+                                                        src={Reze1}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan A"/>
                                                     <div>
@@ -236,7 +234,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src= {Reze2}
+                                                        src={Reze2}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan B"/>
                                                     <div>
@@ -254,7 +252,7 @@ export default function Home() {
                                             <div className="card-body">
                                                 <div className="d-flex align-items-start">
                                                     <img
-                                                        src= {Reze3}
+                                                        src={Reze3}
                                                         className="rounded-circle profile-img ms-5 me-3"
                                                         alt="Foto Pelanggan C"/>
                                                     <div>
@@ -289,8 +287,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            
-            < Contact />
+
+            < Contact/>
         </div>
     );
 }
