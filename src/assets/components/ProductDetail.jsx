@@ -1,60 +1,91 @@
-import {Link, useParams} from "react-router-dom";
-import {products} from "/src/assets/data/products";
-import {scrollToTop} from "./scroolFloating";
+import { Link, useParams } from "react-router-dom";
+import { products } from "/src/assets/data/products";
+import { scrollToTop } from "./scroolFloating";
 
 export default function ProductDetail() {
-    scrollToTop();
+  scrollToTop();
+  const { id } = useParams();
+  const product = products.find((item) => String(item.id) === String(id));
 
-    const {id} = useParams();
-    // Pastikan perbandingan aman: ubah id param ke number jika product.id bertipe
-    // number
-    const product = products.find((item) => String(item.id) === String(id));
-
-    if (!product) {
-        return (
-            <div className="container py-5">
-                <h1>Product Not Found</h1>
-                <Link to="/product" className="btn btn-link">Back to Product</Link>
-            </div>
-        );
-    }
-
+  if (!product) {
     return (
-        <div className="container py-5">
-            <h1 className="mb-4">Product Detail</h1>
-
-            <div className="row g-4">
-                <div className="col-12 col-md-5">
-                    <div className="card h-100 border-0 shadow-sm">
-                        <div className="card-body d-flex flex-column">
-                            <h5 className="card-title mb-3">{product.name}</h5>
-                            <img
-                                src={product.image}
-                                alt={product.name}
-                                className="img-fluid mb-3 rounded"
-                                style={{
-                                    objectFit: "cover",
-                                    maxHeight: 500,
-                                    width: "100%"
-                                }}/> {product.price && (<p className="mt-auto fw-semibold">Harga: {product.price}</p>)}
-                        </div>
-                    </div>
-                </div>
-
-                <div className="col-12 col-md-7">
-                    <div className="card h-100 border-0">
-                        <div className="card-body">
-                            <h3 className="mb-3">Deskripsi Produk</h3>
-                            <p className="mb-4">{product.description}</p>
-
-                            <div className="d-flex gap-2">
-                                <button className="btn btn-primary">Hubungi Penjual</button>
-                                <Link to="/product" className="btn btn-outline-secondary">Kembali ke Produk</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div className="container py-5 text-center">
+        <h1 className="fw-bold mb-3">Produk Tidak Ditemukan</h1>
+        <Link to="/product" className="btn btn-dark px-4">
+          Kembali ke Produk
+        </Link>
+      </div>
     );
+  }
+
+  return (
+    <div className="container py-5">
+      <nav aria-label="breadcrumb">
+        <ol className="breadcrumb mb-4">
+          <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+          <li className="breadcrumb-item"><Link to="/product">Produk</Link></li>
+          <li className="breadcrumb-item active" aria-current="page">{product.name}</li>
+        </ol>
+      </nav>
+
+      <div className="row g-5">
+        <div className="col-12 col-lg-5">
+          <div className="border rounded shadow-sm p-3">
+            <img
+              src={product.image}
+              alt={product.name}
+              className="img-fluid rounded"
+              style={{ objectFit: "cover", width: "100%", maxHeight: "480px" }}
+            />
+          </div>
+        </div>
+
+        <div className="col-12 col-lg-7">
+          <h2 className="fw-bold mb-3">{product.name}</h2>
+          {product.price && (
+            <h4 className="text-primary fw-semibold mb-4">
+              Rp {product.price.toLocaleString("id-ID")}
+            </h4>
+          )}
+
+          <p className="text-muted mb-4" style={{ lineHeight: "1.7" }}>
+            {product.description}
+          </p>
+
+          <div className="mb-4">
+            <h5 className="fw-semibold mb-2">Spesifikasi</h5>
+            <ul className="list-group small">
+              <li className="list-group-item">Kondisi: Baru</li>
+              <li className="list-group-item">Stok: Tersedia</li>
+              <li className="list-group-item">Garansi: 1 Tahun</li>
+              <li className="list-group-item">Pengiriman: Seluruh Indonesia</li>
+            </ul>
+          </div>
+
+          <div className="d-flex flex-wrap gap-2">
+            <a
+              href="https://wa.me/6281234567890"
+              className="btn btn-success px-4"
+              target="_blank"
+            >
+              Hubungi Penjual
+            </a>
+            <Link to="/product" className="btn btn-outline-dark px-4">
+              Kembali ke Produk
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-5 p-4 rounded shadow-sm bg-light">
+        <h5 className="fw-semibold mb-3">Keunggulan Produk</h5>
+        <ul className="mb-0">
+          <li>Tahan lama dan berkualitas tinggi</li>
+          <li>Desain modern dan elegan</li>
+          <li>Harga kompetitif di kelasnya</li>
+          <li>Telah teruji oleh banyak pelanggan</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
