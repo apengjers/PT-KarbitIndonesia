@@ -8,6 +8,11 @@ import Reze1 from "/src/assets/img/reze1.png";
 import Reze2 from "/src/assets/img/reze2.jpg";
 import Reze3 from "/src/assets/img/reze3.jpg";
 import {HashLink} from "react-router-hash-link/dist/react-router-hash-link.cjs.production";
+import visimisi1 from "/src/assets/img/visimisi1.jpg";
+import visimisi2 from "/src/assets/img/visimisi2.jpg";
+import visimisi3 from "/src/assets/img/visimisi3.jpg";
+import visimisi4 from "/src/assets/img/visimisi4.jpg";
+
 
 export default function Home() {
     const {hash} = useLocation();
@@ -62,8 +67,8 @@ export default function Home() {
                                     <div className="row">
                                         <div className="col">
                                             <img
-                                                src="https://img4.gelbooru.com//images/6b/1c/6b1c394c87912a13289fc230d0ef54b1.jpeg"
-                                                className="img-fluid"
+                                                src= {visimisi1}
+                                                className="img-fluid rounded"
                                                 alt="visi"/>
                                         </div>
                                         <div className="col d-flex align-items-center justify-content-center">
@@ -80,8 +85,8 @@ export default function Home() {
                                     <div className="row">
                                         <div className="col">
                                             <img
-                                                src="https://img4.gelbooru.com//images/5c/1d/5c1dc8063d5f9ea43727e5f0579da9b3.jpeg"
-                                                className="img-fluid"
+                                                src= {visimisi2}
+                                                className="img-fluid rounded"
                                                 alt="misi"/>
                                         </div>
                                         <div className="col d-flex align-items-center justify-content-center">
@@ -103,8 +108,8 @@ export default function Home() {
                                         </div>
                                         <div className="col">
                                             <img
-                                                src="https://img4.gelbooru.com//images/6b/1c/6b1c394c87912a13289fc230d0ef54b1.jpeg"
-                                                className="img-fluid"
+                                                src= {visimisi3}
+                                                className="img-fluid rounded"
                                                 alt="visi"/>
                                         </div>
                                     </div>
@@ -121,8 +126,8 @@ export default function Home() {
                                         </div>
                                         <div className="col">
                                             <img
-                                                src="https://img4.gelbooru.com//images/5c/1d/5c1dc8063d5f9ea43727e5f0579da9b3.jpeg"
-                                                className="img-fluid"
+                                                src= {visimisi4}
+                                                className="img-fluid rounded"
                                                 alt="misi"/>
                                         </div>
                                     </div>

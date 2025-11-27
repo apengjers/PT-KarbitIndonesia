@@ -20,10 +20,10 @@ export default function SiteFooter() {
                                     <h5>Perusahaan</h5>
                                     <ul className="nav flex-column">
                                         <li className="nav-item mb-2">
-                                            <Link to="/tentang" className="nav-link p-0 text-muted">Tentang</Link>
+                                            <Link to="#" className="nav-link p-0 text-muted">Tentang</Link>
                                         </li>
                                         <li className="nav-item mb-2">
-                                            <Link to="/karir" className="nav-link p-0 text-muted">Karir</Link>
+                                            <Link to="#" className="nav-link p-0 text-muted">Karir</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -31,13 +31,13 @@ export default function SiteFooter() {
                                     <h5>Layanan</h5>
                                     <ul className="nav flex-column">
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Excavator</a>
+                                            <a href="/product/1" className="nav-link p-0 text-muted">Excavator</a>
                                         </li>
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Dozer</a>
+                                            <a href="/product/2" className="nav-link p-0 text-muted">Dozer</a>
                                         </li>
                                         <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">Motor Grader</a>
+                                            <a href="/product/3" className="nav-link p-0 text-muted">Motor Grader</a>
                                         </li>
                                     </ul>
                                 </div>

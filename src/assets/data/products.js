@@ -7,8 +7,14 @@ export const products = [
         id: 1,
         name: "Excavator",
         image: Excavator,
-        description: "Excavator yang digunakan oleh perusahaan kami adalah Excavator dengan kualitas" +
-                " tinggi"
+        description: "Excavator yang digunakan oleh perusahaan kami adalah Excavator dengan kualitas tinggi",
+        status: "Ready Gan",
+        fungsi: `Menggali tanah (digging)
+Memuat material ke truk (loading)
+Mengangkat material
+Meratakan permukaan tanah
+Menghancurkan bangunan
+`
     }, {
         id: 2,
         name: "Dozer",
@@ -18,8 +24,7 @@ export const products = [
         id: 3,
         name: "Grader",
         image: Grader,
-        description: "Motor Grader yang digunakan oleh perusahaan kami adalah Motor Grader dengan ku" +
-                "alitas tinggi"
+        description: "Motor Grader yang digunakan oleh perusahaan kami adalah Motor Grader dengan kualitas tinggi"
     }, {
         id: 4,
         name: "Honda Supra X 125",

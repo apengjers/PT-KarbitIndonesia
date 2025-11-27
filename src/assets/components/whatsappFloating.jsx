@@ -6,7 +6,7 @@ import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 function Wa() {
     return (
         <a
-            href="https://api.whatsapp.com/send?phone=6282113780480&text=Halo%20Karbit%20Indonesia%2C%20saya%20mau%20tanya..."
+            href="https://api.whatsapp.com/send?phone=62895385303546&text=Halo%20Karbit%20Indonesia%2C%20saya%20mau%20tanya..."
             className="whatsapp-float"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { products } from "/src/assets/data/products";
 import { scrollToTop } from "./scroolFloating";
+import { HashLink } from "react-router-hash-link";
 
 export default function ProductDetail() {
   scrollToTop();
@@ -23,7 +24,7 @@ export default function ProductDetail() {
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb mb-4">
           <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-          <li className="breadcrumb-item"><Link to="/product">Produk</Link></li>
+          <li className="breadcrumb-item"><HashLink to="/#product">Produk</HashLink></li>
           <li className="breadcrumb-item active" aria-current="page">{product.name}</li>
         </ol>
       </nav>
@@ -55,8 +56,8 @@ export default function ProductDetail() {
           <div className="mb-4">
             <h5 className="fw-semibold mb-2">Spesifikasi</h5>
             <ul className="list-group small">
-              <li className="list-group-item">Kondisi: Baru</li>
-              <li className="list-group-item">Stok: Tersedia</li>
+              <li className="list-group-item"></li>
+              <li className="list-group-item">Stok: {product.status}</li>
               <li className="list-group-item">Garansi: 1 Tahun</li>
               <li className="list-group-item">Pengiriman: Seluruh Indonesia</li>
             </ul>
@@ -70,9 +71,9 @@ export default function ProductDetail() {
             >
               Hubungi Penjual
             </a>
-            <Link to="/product" className="btn btn-outline-dark px-4">
+            <HashLink to="/#product" className="btn btn-outline-dark px-4">
               Kembali ke Produk
-            </Link>
+            </HashLink>
           </div>
         </div>
       </div>
