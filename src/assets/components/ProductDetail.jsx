@@ -56,16 +56,15 @@ export default function ProductDetail() {
           <div className="mb-4">
             <h5 className="fw-semibold mb-2">Spesifikasi</h5>
             <ul className="list-group small">
-              <li className="list-group-item"></li>
               <li className="list-group-item">Stok: {product.status}</li>
-              <li className="list-group-item">Garansi: 1 Tahun</li>
+              <li className="list-group-item">Fungsi : {product.fungsi}</li>
               <li className="list-group-item">Pengiriman: Seluruh Indonesia</li>
             </ul>
           </div>
 
           <div className="d-flex flex-wrap gap-2">
             <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/62895385303546"
               className="btn btn-success px-4"
               target="_blank"
             >
