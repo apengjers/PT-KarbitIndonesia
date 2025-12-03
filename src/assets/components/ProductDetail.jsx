@@ -58,7 +58,7 @@ export default function ProductDetail() {
             <ul className="list-group small">
               <li className="list-group-item">Stok: {product.status}</li>
               <li className="list-group-item">Fungsi : {product.fungsi}</li>
-              <li className="list-group-item">Pengiriman: Seluruh Indonesia</li>
+              <li className="list-group-item">Rental Tersedia : {product.rental}</li>
             </ul>
           </div>
 
@@ -80,10 +80,11 @@ export default function ProductDetail() {
       <div className="mt-5 p-4 rounded shadow-sm bg-light">
         <h5 className="fw-semibold mb-3">Keunggulan Produk</h5>
         <ul className="mb-0">
-          <li>Tahan lama dan berkualitas tinggi</li>
-          <li>Desain modern dan elegan</li>
-          <li>Harga kompetitif di kelasnya</li>
-          <li>Telah teruji oleh banyak pelanggan</li>
+          <li>Kualitas Tinggi: Produk kami dipilih dengan standar kualitas yang ketat untuk memastikan performa terbaik.</li>
+          <li>Harga Kompetitif: Kami menawarkan harga yang bersaing di pasar tanpa mengorbankan kualitas.</li>
+          <li>Layanan Pelanggan: Tim kami siap membantu Anda dengan pertanyaan atau kebutuhan terkait produk.</li>
+          <li>Garansi: Kami memberikan garansi untuk memberikan rasa aman kepada pelanggan kami.</li>
+          <li>Pengiriman Cepat: Kami berkomitmen untuk mengirimkan produk tepat waktu sesuai dengan janji kami.</li>
         </ul>
       </div>
     </div>
