@@ -72,7 +72,7 @@ export default function Home() {
                                                 alt="visi"/>
                                         </div>
                                         <div className="col d-flex align-items-center justify-content-center">
-                                            <h3 className="card-title">Keamanan Terjamin</h3>
+                                            <h3 className="card-title">Layananan Berkualitas Tinggi</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@ export default function Home() {
                                                 alt="misi"/>
                                         </div>
                                         <div className="col d-flex align-items-center justify-content-center">
-                                            <h3 className="card-title">Ini Kan My...</h3>
+                                            <h3 className="card-title">Berkontribusi pada pembangunan bangsa</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <div className="row">
                                         <div className="col d-flex align-items-center justify-content-center">
-                                            <h3 className="card-title">Keamanan Terjamin</h3>
+                                            <h3 className="card-title">Menjadi mitra bisnis terpercaya yang menyediakan alat berat unggul di pasar domestik dan internasional.</h3>
                                         </div>
                                         <div className="col">
                                             <img
@@ -122,7 +122,7 @@ export default function Home() {
                                 <div className="card-body text-center">
                                     <div className="row">
                                         <div className="col d-flex align-items-center justify-content-center">
-                                            <h3 className="card-title">Ini Kan My...</h3>
+                                            <h3 className="card-title">Menyediakan jasa yang handal dan profesional</h3>
                                         </div>
                                         <div className="col">
                                             <img
