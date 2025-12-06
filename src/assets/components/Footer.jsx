@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 export default function SiteFooter() {
     return (
@@ -20,10 +21,7 @@ export default function SiteFooter() {
                                     <h5>Perusahaan</h5>
                                     <ul className="nav flex-column">
                                         <li className="nav-item mb-2">
-                                            <Link to="#" className="nav-link p-0 text-muted">Tentang</Link>
-                                        </li>
-                                        <li className="nav-item mb-2">
-                                            <Link to="#" className="nav-link p-0 text-muted">Karir</Link>
+                                            <HashLink to="/#hero" className="nav-link p-0 text-muted">Tentang</HashLink>
                                         </li>
                                     </ul>
                                 </div>
@@ -45,10 +43,7 @@ export default function SiteFooter() {
                                     <h5>Bantuan</h5>
                                     <ul className="nav flex-column">
                                         <li className="nav-item mb-2">
-                                            <Link to="/contact" className="nav-link p-0 text-muted">Kontak</Link>
-                                        </li>
-                                        <li className="nav-item mb-2">
-                                            <a href="#" className="nav-link p-0 text-muted">FAQ</a>
+                                            <HashLink to="/#contact" className="nav-link p-0 text-muted">Kontak</HashLink>
                                         </li>
                                     </ul>
                                 </div>
